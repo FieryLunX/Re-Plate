@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Re-Plate</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <div class="container">
+
+            <nav>
+                <ul class="sidebar">
+                    <li onclick=hideSidebar()><a href="#"><i class='bx bx-x'></i></a></li>
+                    <li><a href="#beranda">Beranda</a></li>
+                    <li><a href="#tentang">Tentang Kami</a></li>
+                    <li><a href="#panduan">Panduan</a></li>
+                    <li><a href="#faq">FAQs</a></li>
+                    <li><a href="#kontak">Kontak Kami</a></li>
+                    <li><a href="#penukaran">Penukaran</a></li>
+                </ul>
+                <ul>
+                    <img src="./image/RePlate.png" alt="">
+                    <li class="hideOnMobile"><a href="#beranda">Beranda</a></li>
+                    <li class="hideOnMobile"><a href="#tentang">Tentang Kami</a></li>
+                    <li class="hideOnMobile"><a href="#panduan">Panduan</a></li>
+                    <li class="hideOnMobile"><a href="#faq">FAQs</a></li>
+                    <li class="hideOnMobile"><a href="#kontak">Kontak Kami</a></li>
+                    <li class="hideOnMobile"><a href="#penukaran">Penukaran</a></li>
+                    <li class="hideOnMobile"><a href="#masuk" id="masuk-button">Masuk</a></li>
+                    <li class="hideOnMobile"><a href="#daftar" id="daftar-button">Daftar</a></li>
+                    <li><a href="#"><i class='bx bx-user-circle'></i></a></li>
+                    <li class="menu-button" onclick=showSidebar()><a href="#"><i class='bx bx-menu'></i></a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="hero" id="beranda">
+        <div class="container">
+            <div class="hero-content">
+                <div class="column-left">
+                    <h1>Tukar Sampah, Dapatkan Makanan, dan Peduli Lingkungan</h1>
+                    <p>Wujudkan lingkungan yang bersih untuk masa depan bangsa, tukarkan sampahmu, nikmati makanan sehat</p>
+                </div>
+                <div class="column-right">
+                    <img src="./image/hero-image.png" alt="Recycle Trash" class="hero-image">
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="about" id="tentang">
+        <div class="container">
+            <div class="about-content">
+                <div class="column-left">
+                    <img src="./image/about-image.png" alt="Recycle Bin" class="about-image">
+                </div>
+                <div class="column-right">
+                    <h2>Tentang Kami</h2>
+                    <p>Re-Plate adalah sebuah platform inovatif yang menghubungkan kesadaran lingkungan dengan insentif bagi penggunanya. Website ini dirancang untuk membantu masyarakat mengelola sampah dengan lebih baik sambil mendapatkan manfaat tambahan berupa poin yang dapat ditukar dengan makanan. Melalui Re-Plate, pengguna dapat menukar sampah yang telah dipilah melalui mitra di tempat yang sudah tersedia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div style="height: 1000px;"></div>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
