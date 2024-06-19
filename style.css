@@ -151,7 +151,7 @@ nav .bx-x{
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: auto;
-    padding: 3rem 6rem);
+    padding: 50px calc((100vw - 1300px) / 2);
     border: 3px solid var(--primary-color);
     border-radius: 24px;
 }
