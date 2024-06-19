@@ -31,7 +31,7 @@ body {
 }
 
 #beranda, #tentang, #panduan, #faq, #kontak, #penukaran {
-    scroll-margin-top: 100px;
+    scroll-margin-top: 70px;
 }
 
 /* start navbar */
@@ -236,6 +236,7 @@ nav .bx-x{
 }
 
 .about .column-right p {
+    padding-top: 20px;
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
@@ -301,6 +302,72 @@ nav .bx-x{
 }
 /* end */
 
+/* faq start */
+.faq {
+    padding: 50px 0 0 0;
+}
+
+.faq h2 {
+    text-align: center;
+}
+
+.faq .faq-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+    padding: 2rem calc((100vw - 1300px) / 2);
+}
+
+.faq .faq-content .faq-container {
+    margin: 25px calc(25px / 2);
+    border-radius: 10px;
+    box-shadow: 0px 1px 3px 0px var(--primary-color);
+    padding: 10px;
+    display: grid;
+    height: auto;
+}
+
+.faq .faq-content .faq-container .faq-info {
+    display: grid;
+    grid-template-columns: 5fr 1fr;
+    height: auto;
+}
+
+.faq .faq-content .faq-container .faq-info .column-left {
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.faq .faq-content .faq-container .faq-info .column-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.faq .faq-content h2 {
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-bottom: 10px;
+}
+
+.faq .column-left h3 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.faq .column-right .bxs-chevron-down-circle {
+    color: var(--primary-color);
+    font-size: 50px;
+}
+/* end */
 
 /* Tablet Style */
 @media (max-width: 768px) {
