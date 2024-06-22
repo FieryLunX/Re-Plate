@@ -21,6 +21,7 @@ body {
     font-weight: 600;
     line-height: normal;
     min-width: 100vh;
+    background: linear-gradient(180deg, #99CC63 0%, #EDF6E4 100%);
 }
 
 .container {
@@ -98,19 +99,9 @@ nav #daftar-button {
     align-items: center;
 }
 
-nav .bx-user-circle {
+nav .bx-user-circle, nav .bx-menu, nav .bx-x {
     font-size: 50px;
     color: var(--primary-color);
-}
-
-nav .bx-menu{
-    font-size: 50px;
-    color: var(--primary-color);
-}
-
-nav .bx-x{
-    font-size: 50px;
-    color: var(--text-color);
 }
 
 .sidebar {
@@ -143,17 +134,14 @@ nav .bx-x{
 /* end */
 
 /* hero start */
-.hero {
-    padding: 20px 0;
-}
 
 .hero .hero-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: auto;
-    padding: 50px calc((100vw - 1300px) / 2);
-    border: 3px solid var(--primary-color);
-    border-radius: 24px;
+    height: 700px;
+    padding: 0 calc((100vw - 1300px) / 2);
+    background: var(--accent-color);
+    position: relative;
 }
 
 .hero .column-left {
@@ -170,15 +158,18 @@ nav .bx-x{
     font-weight: 600;
     line-height: normal;
     margin-top: 0;
+    text-align: center;
 }
 
 .hero .column-left p {
-    color: var(--primary-color);
+    margin-top: 9px;
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     margin-top: 10px;
+    text-align: center;
+    padding: 10px 0;
 }
 
 .hero .column-right {
@@ -272,6 +263,7 @@ nav .bx-x{
     border: 3px solid var(--primary-color);
     border-radius: 24px;
     margin: 25px calc(25px / 2);
+    background-color: var(--accent-color);
 }
 
 .guide .guide-content .guide-info .column-left {
@@ -296,7 +288,7 @@ nav .bx-x{
     line-height: normal;
 }
 
-.guide .guide-info .bx-trash, .bx-face, .bx-list-check, .bx-money, .bx-location-plus, .bx-gift {
+.guide .guide-info .bx-trash, .guide .guide-info .bx-face, .guide .guide-info .bx-list-check, .guide .guide-info .bx-money, .guide .guide-info .bx-location-plus, .guide .guide-info .bx-gift {
     color: var(--primary-color);
     font-size: 100px;
 }
@@ -315,58 +307,112 @@ nav .bx-x{
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: auto;
-    padding: 2rem calc((100vw - 1300px) / 2);
+    /* padding: 2rem calc((100vw - 1300px) / 2); */
 }
 
 .faq .faq-content .faq-container {
     margin: 25px calc(25px / 2);
-    border-radius: 10px;
+    background-color: var(--accent-color);
     box-shadow: 0px 1px 3px 0px var(--primary-color);
-    padding: 10px;
-    display: grid;
-    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: all 0.3s ease;
 }
 
-.faq .faq-content .faq-container .faq-info {
-    display: grid;
-    grid-template-columns: 5fr 1fr;
-    height: auto;
-}
-
-.faq .faq-content .faq-container .faq-info .column-left {
-    padding-left: 20px;
+.faq .faq-content .faq-container .question {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.faq .faq-content .faq-container .faq-info .column-right {
-    display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-}
+    padding: 10px;
+    cursor: pointer;
 
-.faq .faq-content h2 {
-    text-align: center;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    padding-bottom: 10px;
-}
-
-.faq .column-left h3 {
+    border-radius: 10px;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
 }
 
-.faq .column-right .bxs-chevron-down-circle {
+.faq .faq-content .faq-container .answer {
+    display: none;
+    padding: 10px;
+    border-top: 2px solid var(--primary-color);
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.faq .faq-content .faq-container .question .bx-chevron-down, .faq .faq-content .faq-container .question .bx-chevron-up {
     color: var(--primary-color);
     font-size: 50px;
+    cursor: pointer;
 }
+/* end */
+
+/* Footer Style */
+.footer {
+    background-color: var(--accent-color);
+    padding: 10px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer .logo img{
+    height: 88px;
+}
+
+.footer .copyright p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.footer .kontak, .footer .sosial-media {
+    margin-top: 10px;
+}
+
+.footer h3 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.footer .kontak-info, .footer .sosial-info {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 15px 0;
+}
+
+.footer i {
+    margin: 10px 0;
+}
+
+.footer .bx-phone, .footer .bx-envelope, .footer .bxl-instagram, .footer .bxl-twitter {
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
+.footer span {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--text-color);
+}
+
+.footer a {
+    text-decoration: none;
+}
+
 /* end */
 
 /* Tablet Style */
