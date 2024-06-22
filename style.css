@@ -148,7 +148,7 @@ nav .bx-user-circle, nav .bx-menu, nav .bx-x {
 .hero .hero-content {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    height: 700px;
+    height: 100vh;
     padding: 0 calc((100vw - 1300px) / 2);
     background: var(--accent-color);
     position: relative;
