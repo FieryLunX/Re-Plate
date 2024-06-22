@@ -8,252 +8,253 @@
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <header>
-        <div>
-            <nav>
-                <ul class="sidebar">
-                    <li onclick=hideSidebar()><a href="#"><i class='bx bx-x'></i></a></li>
-                    <li><a href="#beranda">Beranda</a></li>
-                    <li><a href="#tentang">Tentang Kami</a></li>
-                    <li><a href="#panduan">Panduan</a></li>
-                    <li><a href="#faq">FAQs</a></li>
-                    <li><a href="#kontak">Kontak Kami</a></li>
-                    <li><a href="#penukaran">Penukaran</a></li>
-                </ul>
-                <ul>
-                    <img src="./image/RePlate.png" alt="">
-                    <li class="hideOnMobile"><a href="#beranda">Beranda</a></li>
-                    <li class="hideOnMobile"><a href="#tentang">Tentang Kami</a></li>
-                    <li class="hideOnMobile"><a href="#panduan">Panduan</a></li>
-                    <li class="hideOnMobile"><a href="#faq">FAQs</a></li>
-                    <li class="hideOnMobile"><a href="#kontak">Kontak Kami</a></li>
-                    <li class="hideOnMobile"><a href="#penukaran">Penukaran</a></li>
-                    <li class="hideOnMobile"><a href="#masuk" id="masuk-button">Masuk</a></li>
-                    <li class="hideOnMobile"><a href="#daftar" id="daftar-button">Daftar</a></li>
-                    <li><a href="#"><i class='bx bx-user-circle'></i></a></li>
-                    <li class="menu-button" onclick=showSidebar()><a href="#"><i class='bx bx-menu'></i></a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    
-    <section class="hero" id="beranda">
-
-            <div class="hero-content">
-                <div class="column-left">
-                    <h1>Tukar Sampah, Dapatkan Makanan, dan Peduli Lingkungan</h1>
-                    <p>Wujudkan lingkungan yang bersih untuk masa depan bangsa, tukarkan sampahmu, nikmati makanan sehat</p>
-                </div>
-                <div class="column-right">
-                    <img src="./image/hero-image.png" alt="Recycle Trash" class="hero-image">
-                </div>
+    <div class="wrapper">
+        <header>
+            <div>
+                <nav>
+                    <ul class="sidebar">
+                        <li onclick=hideSidebar()><a href="#"><i class='bx bx-x'></i></a></li>
+                        <li><a href="index.html#beranda">Beranda</a></li>
+                        <li><a href="index.html#tentang">Tentang Kami</a></li>
+                        <li><a href="index.html#panduan">Panduan</a></li>
+                        <li><a href="index.html#faq">FAQs</a></li>
+                        <li><a href="index.html#kontak">Kontak Kami</a></li>
+                        <li><a href="index.html#penukaran">Penukaran</a></li>
+                    </ul>
+                    <ul>
+                        <a href="index.html"><img src="./image/RePlate.png" alt=""></a>
+                        <li class="hideOnMobile"><a href="index.html#beranda">Beranda</a></li>
+                        <li class="hideOnMobile"><a href="index.html#tentang">Tentang Kami</a></li>
+                        <li class="hideOnMobile"><a href="index.html#panduan">Panduan</a></li>
+                        <li class="hideOnMobile"><a href="index.html#faq">FAQs</a></li>
+                        <li class="hideOnMobile"><a href="index.html#kontak">Kontak Kami</a></li>
+                        <li class="hideOnMobile"><a href="./penukaran-page/penukaran.html">Penukaran</a></li>
+                        <li class="hideOnMobile"><a href="./login-register-page/replatelogin.html" id="masuk-button">Masuk</a></li>
+                        <li class="hideOnMobile"><a href="./login-register-page/replateregister.html" id="daftar-button">Daftar</a></li>
+                        <li><a href="./profile-page/profile.html"><i class='bx bx-user-circle'></i></a></li>
+                        <li class="menu-button" onclick=showSidebar()><a href="#"><i class='bx bx-menu'></i></a></li>
+                    </ul>
+                </nav>
             </div>
-
-    </section>
-    
-    <section class="about" id="tentang">
-        <div class="container">
-            <div class="about-content">
-                <div class="column-left">
-                    <img src="./image/about-image.png" alt="Recycle Bin" class="about-image">
-                </div>
-                <div class="column-right">
-                    <h2>Tentang Kami</h2>
-                    <p>Re-Plate adalah sebuah platform inovatif yang menghubungkan kesadaran lingkungan dengan insentif bagi penggunanya. Website ini dirancang untuk membantu masyarakat mengelola sampah dengan lebih baik sambil mendapatkan manfaat tambahan berupa poin yang dapat ditukar dengan makanan. Melalui Re-Plate, pengguna dapat menukar sampah yang telah dipilah melalui mitra di tempat yang sudah tersedia.</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-    <section class="guide" id="panduan">
-        <div class="container">
-            <div class="guide-content">
-                <h2>Panduan Pengguna</h2>
-                <div class="guide-container">
-                    <!-- left -->
+        </header>
+        <div class="content">
+            <section class="hero" id="beranda">
+                <div class="hero-content">
                     <div class="column-left">
-                        <div class="guide-info">
-                            <div class="column-left">
-                                <i class='bx bx-trash'></i>
-                            </div>
-                            <div class="column-right">
-                                <p>Pilah dan pisahkan sampah berdasarkan jenisnya (plastik, kertas, kaca, logam). Pastikan sampah dalam keadaan bersih dan kering. </p>
-                            </div>
-                        </div>
-                        <div class="guide-info">
-                            <div class="column-left">
-                                <i class='bx bx-face'></i>
-                            </div>
-                            <div class="column-right">
-                                <p>Petugas di lokasi mitra akan mengecek kondisi sampah lalu memindai kode penukaran yang Anda dapatkan dari aplikasi.</p>
-                            </div>
-                        </div>
+                        <h1>Tukar Sampah, Dapatkan Makanan, dan Peduli Lingkungan</h1>
+                        <p>Wujudkan lingkungan yang bersih untuk masa depan bangsa, tukarkan sampahmu, nikmati makanan sehat</p>
                     </div>
-                    <!-- middle -->
-                    <div class="column-middle">
-                        <div class="guide-info">
-                            <div class="column-left">
-                                <i class='bx bx-list-check'></i>
-                            </div>
-                            <div class="column-right">
-                                <p>Pilah dan pisahkan sampah berdasarkan jenisnya (plastik, kertas, kaca, logam). Pastikan sampah dalam keadaan bersih dan kering. </p>
-                            </div>
-                        </div>
-                        <div class="guide-info">
-                            <div class="column-left">
-                                <i class='bx bx-money'></i>
-                            </div>
-                            <div class="column-right">
-                                <p>Petugas di lokasi mitra akan mengecek kondisi sampah lalu memindai kode penukaran yang Anda dapatkan dari aplikasi.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- right -->
                     <div class="column-right">
-                        <div class="guide-info">
+                        <img src="./image/hero-image.png" alt="Recycle Trash" class="hero-image">
+                    </div>
+                </div>
+            </section>
+        
+            <section class="about" id="tentang">
+                <div class="container">
+                    <div class="about-content">
+                        <div class="column-left">
+                            <img src="./image/about-image.png" alt="Recycle Bin" class="about-image">
+                        </div>
+                        <div class="column-right">
+                            <h2>Tentang Kami</h2>
+                            <p>Re-Plate adalah sebuah platform inovatif yang menghubungkan kesadaran lingkungan dengan insentif bagi penggunanya. Website ini dirancang untuk membantu masyarakat mengelola sampah dengan lebih baik sambil mendapatkan manfaat tambahan berupa poin yang dapat ditukar dengan makanan. Melalui Re-Plate, pengguna dapat menukar sampah yang telah dipilah melalui mitra di tempat yang sudah tersedia.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="guide" id="panduan">
+                <div class="container">
+                    <div class="guide-content">
+                        <h2>Panduan Pengguna</h2>
+                        <div class="guide-container">
+                            <!-- left -->
                             <div class="column-left">
-                                <i class='bx bx-location-plus'></i>
+                                <div class="guide-info">
+                                    <div class="column-left">
+                                        <i class='bx bx-trash'></i>
+                                    </div>
+                                    <div class="column-right">
+                                        <p>Pilah dan pisahkan sampah berdasarkan jenisnya (plastik, kertas, kaca, logam). Pastikan sampah dalam keadaan bersih dan kering. </p>
+                                    </div>
+                                </div>
+                                <div class="guide-info">
+                                    <div class="column-left">
+                                        <i class='bx bx-face'></i>
+                                    </div>
+                                    <div class="column-right">
+                                        <p>Petugas di lokasi mitra akan mengecek kondisi sampah lalu memindai kode penukaran yang Anda dapatkan dari aplikasi.</p>
+                                    </div>
+                                </div>
                             </div>
+                            <!-- middle -->
+                            <div class="column-middle">
+                                <div class="guide-info">
+                                    <div class="column-left">
+                                        <i class='bx bx-list-check'></i>
+                                    </div>
+                                    <div class="column-right">
+                                        <p>Pilah dan pisahkan sampah berdasarkan jenisnya (plastik, kertas, kaca, logam). Pastikan sampah dalam keadaan bersih dan kering. </p>
+                                    </div>
+                                </div>
+                                <div class="guide-info">
+                                    <div class="column-left">
+                                        <i class='bx bx-money'></i>
+                                    </div>
+                                    <div class="column-right">
+                                        <p>Petugas di lokasi mitra akan mengecek kondisi sampah lalu memindai kode penukaran yang Anda dapatkan dari aplikasi.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- right -->
                             <div class="column-right">
-                                <p>Pilah dan pisahkan sampah berdasarkan jenisnya (plastik, kertas, kaca, logam). Pastikan sampah dalam keadaan bersih dan kering. </p>
-                            </div>
-                        </div>
-                        <div class="guide-info">
-                            <div class="column-left">
-                                <i class='bx bx-face'></i>
-                            </div>
-                            <div class="column-right">
-                                <p>Petugas di lokasi mitra akan mengecek kondisi sampah lalu memindai kode penukaran yang Anda dapatkan dari aplikasi.</p>
+                                <div class="guide-info">
+                                    <div class="column-left">
+                                        <i class='bx bx-location-plus'></i>
+                                    </div>
+                                    <div class="column-right">
+                                        <p>Pilah dan pisahkan sampah berdasarkan jenisnya (plastik, kertas, kaca, logam). Pastikan sampah dalam keadaan bersih dan kering. </p>
+                                    </div>
+                                </div>
+                                <div class="guide-info">
+                                    <div class="column-left">
+                                        <i class='bx bx-face'></i>
+                                    </div>
+                                    <div class="column-right">
+                                        <p>Petugas di lokasi mitra akan mengecek kondisi sampah lalu memindai kode penukaran yang Anda dapatkan dari aplikasi.</p>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="faq" id="faq">
-        <div class="container">
-            <h2>FAQ</h2>
-            <div class="faq-content">
-                <div class="column-left">
-                    <div class="faq-container">
-                        <div class="question">
-                            <span class="faq-question">What is Re-Plate? What types of waste can be exchanged?</span>
-                            <i class='bx bx-chevron-down'></i>
+            </section>
+        
+            <section class="faq" id="faq">
+                <div class="container">
+                    <h2>FAQ</h2>
+                    <div class="faq-content">
+                        <div class="column-left">
+                            <div class="faq-container">
+                                <div class="question">
+                                    <span class="faq-question">What is Re-Plate? What types of waste can be exchanged?</span>
+                                    <i class='bx bx-chevron-down'></i>
+                                </div>
+                                <div class="answer">
+                                    <p>Re-Plate is an app that allows users to exchange waste for points, which can be redeemed for food at our partner locations.</p>
+                                </div>
+                            </div>
+                            <div class="faq-container">
+                                <div class="question">
+                                    <span class="faq-question">What is Re-Plate? What types of waste can be exchanged?</span>
+                                    <i class='bx bx-chevron-down'></i>
+                                </div>
+                                <div class="answer">
+                                    <p>Re-Plate is an app that allows users to exchange waste for points, which can be redeemed for food at our partner locations.</p>
+                                </div>
+                            </div>
+                            <div class="faq-container">
+                                <div class="question">
+                                    <span class="faq-question">What is Re-Plate? What types of waste can be exchanged?</span>
+                                    <i class='bx bx-chevron-down'></i>
+                                </div>
+                                <div class="answer">
+                                    <p>Re-Plate is an app that allows users to exchange waste for points, which can be redeemed for food at our partner locations.</p>
+                                </div>
+                            </div>
+                            <div class="faq-container">
+                                <div class="question">
+                                    <span class="faq-question">What is Re-Plate? What types of waste can be exchanged?</span>
+                                    <i class='bx bx-chevron-down'></i>
+                                </div>
+                                <div class="answer">
+                                    <p>Re-Plate is an app that allows users to exchange waste for points, which can be redeemed for food at our partner locations.</p>
+                                </div>
+                            </div>
+                            <div class="faq-container">
+                                <div class="question">
+                                    <span class="faq-question">What is Re-Plate? What types of waste can be exchanged?</span>
+                                    <i class='bx bx-chevron-down'></i>
+                                </div>
+                                <div class="answer">
+                                    <p>Re-Plate is an app that allows users to exchange waste for points, which can be redeemed for food at our partner locations.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="answer">
-                            <p>Re-Plate is an app that allows users to exchange waste for points, which can be redeemed for food at our partner locations.</p>
-                        </div>
-                    </div>
-                    <div class="faq-container">
-                        <div class="question">
-                            <span class="faq-question">What is Re-Plate? What types of waste can be exchanged?</span>
-                            <i class='bx bx-chevron-down'></i>
-                        </div>
-                        <div class="answer">
-                            <p>Re-Plate is an app that allows users to exchange waste for points, which can be redeemed for food at our partner locations.</p>
-                        </div>
-                    </div>
-                    <div class="faq-container">
-                        <div class="question">
-                            <span class="faq-question">What is Re-Plate? What types of waste can be exchanged?</span>
-                            <i class='bx bx-chevron-down'></i>
-                        </div>
-                        <div class="answer">
-                            <p>Re-Plate is an app that allows users to exchange waste for points, which can be redeemed for food at our partner locations.</p>
-                        </div>
-                    </div>
-                    <div class="faq-container">
-                        <div class="question">
-                            <span class="faq-question">What is Re-Plate? What types of waste can be exchanged?</span>
-                            <i class='bx bx-chevron-down'></i>
-                        </div>
-                        <div class="answer">
-                            <p>Re-Plate is an app that allows users to exchange waste for points, which can be redeemed for food at our partner locations.</p>
-                        </div>
-                    </div>
-                    <div class="faq-container">
-                        <div class="question">
-                            <span class="faq-question">What is Re-Plate? What types of waste can be exchanged?</span>
-                            <i class='bx bx-chevron-down'></i>
-                        </div>
-                        <div class="answer">
-                            <p>Re-Plate is an app that allows users to exchange waste for points, which can be redeemed for food at our partner locations.</p>
+                        <div class="column-right">
+                            <div class="faq-container">
+                                <div class="question">
+                                    <span class="faq-question">What is Re-Plate? What types of waste can be exchanged?</span>
+                                    <i class='bx bx-chevron-down'></i>
+                                </div>
+                                <div class="answer">
+                                    <p>Re-Plate is an app that allows users to exchange waste for points, which can be redeemed for food at our partner locations.</p>
+                                </div>
+                            </div>
+                            <div class="faq-container">
+                                <div class="question">
+                                    <span class="faq-question">What is Re-Plate? What types of waste can be exchanged?</span>
+                                    <i class='bx bx-chevron-down'></i>
+                                </div>
+                                <div class="answer">
+                                    <p>Re-Plate is an app that allows users to exchange waste for points, which can be redeemed for food at our partner locations.</p>
+                                </div>
+                            </div>
+                            <div class="faq-container">
+                                <div class="question">
+                                    <span class="faq-question">What is Re-Plate? What types of waste can be exchanged?</span>
+                                    <i class='bx bx-chevron-down'></i>
+                                </div>
+                                <div class="answer">
+                                    <p>Re-Plate is an app that allows users to exchange waste for points, which can be redeemed for food at our partner locations.</p>
+                                </div>
+                            </div>
+                            <div class="faq-container">
+                                <div class="question">
+                                    <span class="faq-question">What is Re-Plate? What types of waste can be exchanged?</span>
+                                    <i class='bx bx-chevron-down'></i>
+                                </div>
+                                <div class="answer">
+                                    <p>Re-Plate is an app that allows users to exchange waste for points, which can be redeemed for food at our partner locations.</p>
+                                </div>
+                            </div>
+                            <div class="faq-container">
+                                <div class="question">
+                                    <span class="faq-question">What is Re-Plate? What types of waste can be exchanged?</span>
+                                    <i class='bx bx-chevron-down'></i>
+                                </div>
+                                <div class="answer">
+                                    <p>Re-Plate is an app that allows users to exchange waste for points, which can be redeemed for food at our partner locations.</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="column-right">
-                    <div class="faq-container">
-                        <div class="question">
-                            <span class="faq-question">What is Re-Plate? What types of waste can be exchanged?</span>
-                            <i class='bx bx-chevron-down'></i>
-                        </div>
-                        <div class="answer">
-                            <p>Re-Plate is an app that allows users to exchange waste for points, which can be redeemed for food at our partner locations.</p>
-                        </div>
-                    </div>
-                    <div class="faq-container">
-                        <div class="question">
-                            <span class="faq-question">What is Re-Plate? What types of waste can be exchanged?</span>
-                            <i class='bx bx-chevron-down'></i>
-                        </div>
-                        <div class="answer">
-                            <p>Re-Plate is an app that allows users to exchange waste for points, which can be redeemed for food at our partner locations.</p>
-                        </div>
-                    </div>
-                    <div class="faq-container">
-                        <div class="question">
-                            <span class="faq-question">What is Re-Plate? What types of waste can be exchanged?</span>
-                            <i class='bx bx-chevron-down'></i>
-                        </div>
-                        <div class="answer">
-                            <p>Re-Plate is an app that allows users to exchange waste for points, which can be redeemed for food at our partner locations.</p>
-                        </div>
-                    </div>
-                    <div class="faq-container">
-                        <div class="question">
-                            <span class="faq-question">What is Re-Plate? What types of waste can be exchanged?</span>
-                            <i class='bx bx-chevron-down'></i>
-                        </div>
-                        <div class="answer">
-                            <p>Re-Plate is an app that allows users to exchange waste for points, which can be redeemed for food at our partner locations.</p>
-                        </div>
-                    </div>
-                    <div class="faq-container">
-                        <div class="question">
-                            <span class="faq-question">What is Re-Plate? What types of waste can be exchanged?</span>
-                            <i class='bx bx-chevron-down'></i>
-                        </div>
-                        <div class="answer">
-                            <p>Re-Plate is an app that allows users to exchange waste for points, which can be redeemed for food at our partner locations.</p>
-                        </div>
-                    </div>
+            </section>
+        </div>
+    
+        <footer class="footer" id="kontak">
+            <div class="logo"><img src="./image/RePlate.png" alt="Re-Plate"></div>
+            <div class="copyright">
+                <p>© 2024 Re-Plate. All Rights Reserved PT.Foodinplate</p>
+            </div>
+            <div class="kontak">
+                <h3>Kontak Kami</h3>
+                <div class="kontak-info">
+                    <i class='bx bx-phone'></i> <span>+123 456 7890</span><br>
+                    <i class='bx bx-envelope'></i> <span>email@example.com</span>
                 </div>
             </div>
-        </div>
-    </section>
-
-    <footer class="footer" id="kontak">
-        <div class="logo"><img src="./image/RePlate.png" alt="Re-Plate"></div>
-        <div class="copyright">
-            <p>© 2024 Re-Plate. All Rights Reserved PT.Foodinplate</p>
-        </div>
-        <div class="kontak">
-            <h3>Kontak Kami</h3>
-            <div class="kontak-info">
-                <i class='bx bx-phone'></i> <span>+123 456 7890</span><br>
-                <i class='bx bx-envelope'></i> <span>email@example.com</span>
+            <div class="sosial-media">
+                <h3>Sosial Media</h3>
+                <div class="sosial-info">
+                    <a href="https://www.instagram.com"><i class='bx bxl-instagram'></i><span>@re-plate</span></a> <br>
+                    <a href="https://www.twitter.com"><i class='bx bxl-twitter'></i><span>@re-plate</span></a>
+                </div>
             </div>
-        </div>
-        <div class="sosial-media">
-            <h3>Sosial Media</h3>
-            <div class="sosial-info">
-                <a href="https://www.instagram.com"><i class='bx bxl-instagram'></i><span>@re-plate</span></a> <br>
-                <a href="https://www.twitter.com"><i class='bx bxl-twitter'></i><span>@re-plate</span></a>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
 <script src="app.js"></script>
 </html>
