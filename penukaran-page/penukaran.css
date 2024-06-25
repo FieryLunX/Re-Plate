@@ -2,7 +2,7 @@
 
 :root {
     --primary-color: rgba(153, 204, 99, 1);
-    --secondary-color: rgba(172, 224, 116, 1);
+    --secondary-color: #EDF6E4;
     --accent-color: rgba(255, 255, 255, 1);
     --text-color: rgba(0, 0, 0, 1);
     
@@ -22,7 +22,7 @@ body {
     font-weight: 600;
     line-height: normal;
     min-width: 100vh;
-    background: var(--primary-color);
+    background: var(--secondary-color);
 }
 
 .wrapper {
@@ -42,15 +42,11 @@ body {
     /* border: solid 1px red; */
 }
 
-#beranda, #tentang, #panduan, #faq, #kontak, #penukaran {
-    scroll-margin-top: 70px;
-}
-
 /* start navbar */
 header {
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 99;
     background-color: var(--accent-color);
 }
 
@@ -74,6 +70,7 @@ nav img {
 }
 
 nav li {
+    font-size: 20px;
     height: 80px;
 }
 
@@ -88,8 +85,8 @@ nav a {
 
 nav #masuk-button {
     margin: 15px 12px;
-    color: var(--primary-color);
-    border: 1px solid var(--primary-color);
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
     border-radius: 10px;
     display: flex;
     width: 150px;
@@ -144,14 +141,321 @@ nav .bx-user-circle, nav .bx-menu, nav .bx-x {
 }
 /* end */
 
-/* Contents Style */
-.penukaran {
-    margin-left: 30px;
+/* Peta Style */
+.peta-katakan-peta {
+    margin-top: 60px;
+}
+
+.peta-katakan-peta h1 {
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+.peta-katakan-peta .penukaran-container {
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+    border-radius: 24px;
+    border: 3px solid var(--primary-color);
+    overflow: hidden;
+    width: 1100px;
+    height: 700px;
+    box-sizing: border-box;
+}
+
+.peta-katakan-peta .penukaran-container .map {
+    overflow: hidden;
+    border-radius: 24px;
+}
+
+.peta-katakan-peta .info-map {
+    display: grid;
+    grid-template-columns: 1fr 2.4fr;
+    padding: 25px calc((100vw - 1300px) / 2);
+    position: relative;
+}
+
+.peta-katakan-peta .info-map .column-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.peta-katakan-peta .info-map .column-left img {
+    width: 284px;
+    height: 160px;
+    border-radius: 24px;
+}
+
+.peta-katakan-peta .info-map .column-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 780px;
+}
+
+.peta-katakan-peta .info-map .column-right h3 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.peta-katakan-peta .info-map .column-right h4 {
+    padding-top: 20px;
+    text-align: justify;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+/* end */
+
+/* Sampah Style */
+.sampah {
+    background-color: var(--accent-color);
+    padding: 25px 0;
+}
+
+.sampah .help {
+    background: linear-gradient(180deg, #99CC63 0%, #EDF6E4 100%);
+    width: 1260px;
+    height: auto;
+    border-radius: 25px;
+    margin: 25px auto;
+    text-align: center;
+    display: flex;
+    padding-bottom: 100px;
+}
+
+.sampah .sampah-container {
+    display: flex;
+}
+
+.sampah .sampah-container .sampah-content {
+    width: 100%;
+    padding: 25px 22.5px;
+}
+
+.sampah h1 {
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 35px auto;
+}
+
+.sampah .sampah-container .sampah-content .jenis-sampah {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+}
+
+.sampah .sampah-container .sampah-content .jenis-sampah .jenis-container {
+    margin: 25px calc(25px / 2);
+    background-color: var(--accent-color);
+    box-shadow: 0px 1px 3px 0px var(--primary-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sampah .sampah-container .sampah-content .jenis-sampah .jenis-container .jenis {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.sampah .sampah-container .sampah-content .jenis-sampah .jenis-container .sampah-info {
+    display: none;
+    padding: 10px;
+    border-top: 2px solid var(--primary-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: left;
+}
+
+.sampah .sampah-container .sampah-content .jenis-sampah .jenis-container .sampah-info .text-jenis{
+    padding-left: 25px;
+}
+.sampah .sampah-container .sampah-content .jenis-sampah .jenis-container .sampah-info .text-jenis ul{
+    padding-left: 15px;
+}
+
+/* Hadiah */
+.sampah .sampah-container .sampah-content .jenis-hadiah {
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: auto;
+}
+
+.sampah .sampah-container .sampah-content .jenis-hadiah .jenis-hadiah-container {
+    margin: 25px calc(25px / 2);
+    background-color: var(--accent-color);
+    box-shadow: 0px 1px 3px 0px var(--primary-color);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.sampah .sampah-container .sampah-content .jenis-hadiah .jenis-hadiah-container .tipe-hadiah {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.sampah .sampah-container .sampah-content .jenis-hadiah .jenis-hadiah-container .hadiah-info {
+    display: none;
+    padding: 10px;
+    border-top: 2px solid var(--primary-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-align: left;
+}
+
+.sampah .sampah-container .sampah-content .jenis-hadiah .jenis-hadiah-container .hadiah-info .text-hadiah{
+    padding-left: 25px;
+    padding-top: 10px;
+}
+.sampah .sampah-container .sampah-content .jenis-hadiah .jenis-hadiah-container .hadiah-info .text-hadiah ul{
+    padding-left: 15px;
+}
+
+.sampah .bx-chevron-down, .sampah .bx-chevron-up {
+    color: var(--primary-color);
+    font-size: 50px;
+    cursor: pointer;
+}
+
+.sampah .space {
+    content: "";
+    height: 100px;
+}
+/* end */
+
+/* Transaction Style */
+.sampah .container-form form {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.sampah label {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.sampah .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 20px;
+}
+
+.sampah .item input[type="checkbox"] {
+    appearance: none;
+    width: 16px;
+    height: 16px;
+    content: none;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid var(--text-color);
+    background: var(--accent-color);
+}
+
+.sampah .item input[type="checkbox"]:checked {
+    appearance: none;
+    padding: 0;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 2px solid var(--text-color);
+    background: var(--primary-color);
+}
+
+.sampah .counter {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.sampah .counter-content {
+    display: flex;
+    border-radius: 10px;
+    border: 2px solid var(--text-color);
+    background: var(--accent-color);
+    align-items: center;
+    gap: 0;
+}
+
+.sampah .counter button {
+    background-color: transparent;
+    color: var(--text-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.sampah .counter span {
+    width: 50px;
+    height: 50px;
+    background: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    margin: 0;
+    border-radius: 10px;
+    border-right: var(--text-color) solid 2px;
+    border-left: var(--text-color) solid 2px;
+    border-top: var(--text-color) solid 1px;
+    border-bottom: var(--text-color) solid 1px;
+}
+
+.sampah .generate-code {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 20px;
 }
 /* end */
 
 /* Footer Style */
 .footer {
+    box-shadow: 0px 1px 0 0px var(--primary-color) inset;
+    border-radius: 10px 10px 0px 0px;
     background-color: var(--accent-color);
     padding: 10px 200px;
     display: flex;

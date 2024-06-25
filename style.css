@@ -2,7 +2,7 @@
 
 :root {
     --primary-color: rgba(153, 204, 99, 1);
-    --secondary-color: rgba(172, 224, 116, 1);
+    --secondary-color: #EDF6E4;
     --accent-color: rgba(255, 255, 255, 1);
     --text-color: rgba(0, 0, 0, 1);
 }
@@ -49,7 +49,7 @@ body {
 header {
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 99;
     background-color: var(--accent-color);
 }
 
@@ -73,6 +73,7 @@ nav img {
 }
 
 nav li {
+    font-size: 20px;
     height: 80px;
 }
 
@@ -87,8 +88,8 @@ nav a {
 
 nav #masuk-button {
     margin: 15px 12px;
-    color: var(--primary-color);
-    border: 1px solid var(--primary-color);
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
     border-radius: 10px;
     display: flex;
     width: 150px;
@@ -160,6 +161,7 @@ nav .bx-user-circle, nav .bx-menu, nav .bx-x {
     justify-content: center;
     align-items: flex-start;
     width: 490px;
+    padding-left: 90px;
 }
 
 .hero .column-left h1 {
@@ -169,6 +171,23 @@ nav .bx-user-circle, nav .bx-menu, nav .bx-x {
     line-height: normal;
     margin-top: 0;
     text-align: center;
+}
+
+.hero .column-left .highlight {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+}
+
+.hero .column-left .highlight::before {
+    content: '';
+    width: 398px;
+    height: 26px;
+    background: var(--primary-color);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
 }
 
 .hero .column-left p {
@@ -202,7 +221,7 @@ nav .bx-user-circle, nav .bx-menu, nav .bx-x {
 
 .about .about-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
     height: auto;
     padding: 3rem calc((100vw - 1300px) / 2);
 }
@@ -211,14 +230,12 @@ nav .bx-user-circle, nav .bx-menu, nav .bx-x {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 0rem 2rem;
 }
 
 .about .column-left img {
     width: 400px;
     height: 400px;
     border-radius: 24px;
-    border: 3px solid var(--primary-color);
 }
 
 .about .column-right {
@@ -226,6 +243,7 @@ nav .bx-user-circle, nav .bx-menu, nav .bx-x {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+    padding-left: 54px;
 }
 
 .about .column-right h2 {
@@ -243,6 +261,7 @@ nav .bx-user-circle, nav .bx-menu, nav .bx-x {
     font-weight: 600;
     line-height: normal;
     margin-top: 10px;
+    text-align: justify;
 }
 /* end */
 
@@ -326,7 +345,6 @@ nav .bx-user-circle, nav .bx-menu, nav .bx-x {
     box-shadow: 0px 1px 3px 0px var(--primary-color);
     border-radius: 10px;
     overflow: hidden;
-    transition: all 0.3s ease;
 }
 
 .faq .faq-content .faq-container .question {
@@ -347,7 +365,6 @@ nav .bx-user-circle, nav .bx-menu, nav .bx-x {
     display: none;
     padding: 10px;
     border-top: 2px solid var(--primary-color);
-    transition: max-height 0.3s ease, padding 0.3s ease;
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -363,6 +380,9 @@ nav .bx-user-circle, nav .bx-menu, nav .bx-x {
 
 /* Footer Style */
 .footer {
+    box-shadow: 0px 1px 0 0px var(--primary-color) inset;
+    border-radius: 10px 10px 0px 0px;
+    margin-top: 50px;
     background-color: var(--accent-color);
     padding: 10px 200px;
     display: flex;

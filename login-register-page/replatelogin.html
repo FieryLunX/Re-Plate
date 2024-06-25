@@ -21,56 +21,54 @@
                         <li><a href="../index.html#kontak">Kontak Kami</a></li>
                         <li><a href="../index.html#penukaran">Penukaran</a></li>
                     </ul>
-                    <ul>
-                        <a href="../index.html#beranda"><img src="../image/RePlate.png" alt=""></a>
-                        <li class="hideOnMobile"><a href="../index.html#beranda">Beranda</a></li>
-                        <li class="hideOnMobile"><a href="../index.html#tentang">Tentang Kami</a></li>
-                        <li class="hideOnMobile"><a href="../index.html#panduan">Panduan</a></li>
-                        <li class="hideOnMobile"><a href="../index.html#faq">FAQs</a></li>
-                        <li class="hideOnMobile"><a href="../index.html#kontak">Kontak Kami</a></li>
-                        <li class="hideOnMobile"><a href="../penukaran-page/penukaran.html">Penukaran</a></li>
-                        <li class="hideOnMobile"><a href="../login-register-page/replatelogin.html" id="masuk-button">Masuk</a></li>
-                        <li class="hideOnMobile"><a href="../login-register-page/replateregister.html" id="daftar-button">Daftar</a></li>
-                        <li><a href="../profile-page/profile.html"><i class='bx bx-user-circle'></i></a></li>
-                        <li class="menu-button" onclick=showSidebar()><a href="#"><i class='bx bx-menu'></i></a></li>
-                    </ul>
+                    <div class="container">
+                        <ul>
+                            <a href="../index.html"><img src="../image/RePlate.png" alt=""></a>
+                            <li class="hideOnMobile"><a href="../index.html#beranda">Beranda</a></li>
+                            <li class="hideOnMobile"><a href="../index.html#tentang">Tentang Kami</a></li>
+                            <li class="hideOnMobile"><a href="../index.html#panduan">Panduan</a></li>
+                            <li class="hideOnMobile"><a href="../index.html#faq">FAQs</a></li>
+                            <li class="hideOnMobile"><a href="../index.html#kontak">Kontak Kami</a></li>
+                            <li class="hideOnMobile"><a href="../penukaran-page/penukaran.html">Penukaran</a></li>
+                            <li class="hideOnMobile"><a href="../login-register-page/replatelogin.html" id="masuk-button">Masuk</a></li>
+                            <li class="hideOnMobile"><a href="../login-register-page/replateregister.html" id="daftar-button">Daftar</a></li>
+                            <li><a href="../profile-page/profile.html"><i class='bx bx-user-circle'></i></a></li>
+                            <li class="menu-button" onclick=showSidebar()><a href="#"><i class='bx bx-menu'></i></a></li>
+                        </ul>
+                    </div>
                 </nav>
             </div>
         </header>
-    
-    
+
         <div class="content">
             <section class="login">
-                <div class="login-container">
-                    <div class="box">
-                        <form id="form" action="/">
+                <div class="left-background">
+                    <img src="../image/hero-image.png" alt="">
+                </div>
+                <div class="right-side">
+                    <div class="form-container">
+                        <form id="form">
                             <h1>Masuk</h1>
                             <div class="input-control">
-                                <h4>Nama</h4>
-                                <label for="username"></label>
-                                <input id="username" name="username" type="text" placeholder="Masukkan Nama Anda" >
+                                <h4>Email / Nama Pengguna</h4>
+                                <input id="username" name="username" type="text" placeholder="Masukkan email atau nama pengguna">
                                 <div class="error"></div>
                             </div>
                             <div class="input-control">
                                 <h4>Kata Sandi</h4>
-                                <label for="password"></label>
-                                <input id="password" name="password" type="password" placeholder="Masukkan kata sandi anda">
+                                <input id="password" name="password" type="password" placeholder="Masukkan kata sandi">
                                 <div class="error"></div>
                             </div>
-                            <div class="sandi">
-                            <a href="#">Lupa Kata Sandi?</a>
-                            </div>
-                            <button type="submit">MASUK<a href="#"></a></button>
-                            <div class="input-control">
-                                <h5>Belum memiliki akun Re-Plate? <a href="replateregister.html">Daftar</a></h5>
-                            </div>
+                            <div class="forgot-password"><a href="../login-register-page/forgotpassword.html">Lupa kata sandi ?</a></div>
+                            <button type="submit">MASUK<a href="profile.html"></a></button>
+                            <div class="no-register">Belum memiliki akun Re-Plate?<a href="../login-register-page/replateregister.html">Daftar</a></div>
                         </form>
                     </div>
                 </div>
             </section>
         </div>
     
-        <footer class="footer">
+        <footer class="footer" id="kontak">
             <div class="logo"><img src="../image/RePlate.png" alt="Re-Plate"></div>
             <div class="copyright">
                 <p>© 2024 Re-Plate. All Rights Reserved PT.Foodinplate</p>
