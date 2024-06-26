@@ -96,10 +96,10 @@ document.addEventListener("DOMContentLoaded", function() {
 
     const updateCounter = (target, delta) => {
         const countElement = document.getElementById(`count${target.charAt(0).toUpperCase() + target.slice(1)}`);
-        let count = parseInt(countElement.textContent);
+        let count = parseInt(countElement.value);
         count += delta;
         if (count < 0) count = 0;
-        countElement.textContent = count;
+        countElement.value = count;
     };
 
     checkboxes.forEach(checkbox => {
@@ -107,9 +107,9 @@ document.addEventListener("DOMContentLoaded", function() {
             const target = checkbox.dataset.target;
             const countElement = document.getElementById(`count${target.charAt(0).toUpperCase() + target.slice(1)}`);
             if (checkbox.checked) {
-                countElement.textContent = "1";
+                countElement.value = "1";
             } else {
-                countElement.textContent = "0";
+                countElement.value = "0";
             }
         });
     });
@@ -128,9 +128,27 @@ document.addEventListener("DOMContentLoaded", function() {
             const target = button.dataset.target;
             updateCounter(target, -1);
             const countElement = document.getElementById(`count${target.charAt(0).toUpperCase() + target.slice(1)}`);
-            if (parseInt(countElement.textContent) === 0) {
+            if (parseInt(countElement.value) === 0) {
                 const checkbox = document.querySelector(`#sampah${target.charAt(0).toUpperCase() + target.slice(1)}`);
                 checkbox.checked = false;
+            }
+        });
+    });
+
+    document.querySelectorAll("input[type='number']").forEach(input => {
+        input.addEventListener("input", () => {
+
+            if (input.value.startsWith('0') && input.value.length > 1) {
+                input.value = input.value.replace(/^0+/, '');
+            }
+
+            const target = input.id.replace('count', '').toLowerCase();
+            const checkbox = document.querySelector(`#sampah${target.charAt(0).toUpperCase() + target.slice(1)}`);
+            if (parseInt(input.value) > 0) {
+                if (!checkbox.checked) checkbox.checked = true;
+            } else {
+                if (checkbox.checked) checkbox.checked = false;
+                input.value = 0;
             }
         });
     });

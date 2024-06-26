@@ -424,7 +424,7 @@ nav .bx-user-circle, nav .bx-menu, nav .bx-x {
     line-height: normal;
 }
 
-.sampah .counter span {
+.sampah .counter input {
     width: 50px;
     height: 50px;
     background: var(--primary-color);
@@ -432,12 +432,26 @@ nav .bx-user-circle, nav .bx-menu, nav .bx-x {
     justify-content: center;
     align-items: center;
     font-size: 16px;
-    margin: 0;
+    text-align: center;
     border-radius: 10px;
     border-right: var(--text-color) solid 2px;
     border-left: var(--text-color) solid 2px;
     border-top: var(--text-color) solid 1px;
     border-bottom: var(--text-color) solid 1px;
+}
+
+.sampah .counter input:focus {
+    outline: none;
+}
+
+.sampah .counter input[type="number"] {
+    -moz-appearance: textfield;
+    appearance: textfield;
+}
+
+.sampah .counter input[type="number"]::-webkit-outer-spin-button, input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .sampah .generate-code {
