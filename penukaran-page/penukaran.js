@@ -93,6 +93,29 @@ document.addEventListener('DOMContentLoaded', function () {
 // Transaction
 document.addEventListener("DOMContentLoaded", function() {
     const checkboxes = document.querySelectorAll(".sampah-checkbox");
+    const generateCodeButton = document.getElementById("generate-code");
+
+    const anyCheckboxChecked = () => {
+        return Array.from(checkboxes).some(checkbox => checkbox.checked);
+    };
+
+    const updateGenerateCodeButton = () => {
+        generateCodeButton.disabled = !anyCheckboxChecked();
+    };
+
+    checkboxes.forEach(checkbox => {
+        checkbox.addEventListener("change", () => {
+            updateGenerateCodeButton();
+        });
+    });
+
+    generateCodeButton.addEventListener("click", () => {
+        if (!anyCheckboxChecked()) {
+            alert("Pilih setidaknya satu item terlebih dahulu!");
+        } else {
+            window.location.href = '../barcode-page/scanbarcode.html';
+        }
+    });
 
     const updateCounter = (target, delta) => {
         const countElement = document.getElementById(`count${target.charAt(0).toUpperCase() + target.slice(1)}`);

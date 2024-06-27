@@ -452,9 +452,14 @@ nav .bx-bell, nav .bx-chevron-down{
     border: none;
     margin-left: 100px;
     cursor: pointer;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    color: var(--accent-color);
 }
 
-.qr .qr-container button .bx-qr-scan {
+.qr .qr-container a button .bx-qr-scan {
     display: flex;
     align-items: center;
     font-size: 20px;
@@ -462,13 +467,8 @@ nav .bx-bell, nav .bx-chevron-down{
     padding-right: 10px;
 }
 
-.qr .qr-container button a {
+.qr .qr-container a {
     text-decoration: none;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: normal;
-    color: var(--accent-color);
 }
 /* end */
 
