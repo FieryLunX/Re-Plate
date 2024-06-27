@@ -401,8 +401,8 @@ nav .bx-bell, nav .bx-chevron-down{
 /* Qr Code Style */
 .qr .qr-container {
     position: relative;
-    margin: 47px 25px;
-    padding: 10px 25px 19px;
+    margin: 47px 0 198px 25px;
+    padding: 10px 15px 19px 10px;
     border-radius: 5px;
     border: 1px solid #D9D9D9;
     width: 90%;
@@ -449,7 +449,7 @@ nav .bx-bell, nav .bx-chevron-down{
     border-radius: 10px;
     background: var(--primary-color);
     border: none;
-    margin-left: 110px;
+    margin-left: 100px;
     cursor: pointer;
 }
 
