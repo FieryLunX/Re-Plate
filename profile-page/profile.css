@@ -137,7 +137,7 @@ nav .bx-bell, nav .bx-chevron-down{
 
 .dropdown .dropdown-content {
     top: 40px;
-    left: -170px;
+    left: -190px;
     display: none;
     position: absolute;
     background-color: var(--accent-color);
@@ -149,20 +149,26 @@ nav .bx-bell, nav .bx-chevron-down{
     font-style: normal;
     font-weight: 500;
     line-height: 2;
+    width: 200px;
 }
 
 .dropdown .dropdown-content .menu-item {
+    padding: 0 20px;
     display: flex;
     align-items: center;
     width: 100%;
-    padding: 0 12px;
     cursor: default;
 }
 
+.dropdown .dropdown-content .menu-item.click {
+    cursor: pointer;
+}
+
 .dropdown .dropdown-content .menu-item:hover {
+    flex-wrap: nowrap;
     border-radius: 8px;
     background: rgba(153, 204, 99, 0.25);
-    width: 100%;
+    width: auto;
 }
 
 .dropdown .dropdown-content .menu-item span {
