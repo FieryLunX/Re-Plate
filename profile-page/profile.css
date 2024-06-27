@@ -270,16 +270,18 @@ nav .bx-bell, nav .bx-chevron-down{
 }
 
 .point-info .head-box .status-box .status-penukaran{
+    justify-content: space-between;
     color:var(--text-color);             
     padding-bottom: 3px;     
     margin-top: 20px;
     padding-top: 30px;
-    padding-left: 25px;
+    margin-right: 35px;
     display: flex;
     gap: 76%;
 }
 
-.point-info .head-box .status-box .status-title{           
+.point-info .head-box .status-box .status-title{     
+    margin-left: 20px;      
     font-size: 16px;
     font-style: normal;
     font-weight: 500;
@@ -294,9 +296,17 @@ nav .bx-bell, nav .bx-chevron-down{
 }
 
 .point-info .head-box .status-box .tambahan {
+    justify-content: space-between;
     display: flex ;
     padding-left: 20px;
     padding-top: 20px;
+}
+
+.point-info .head-box .status-box .tambahan-text {
+    display: flex ;
+    display: flex;
+    align-items: center;
+    gap: 20px;
 }
 
 .point-info .head-box .status-box .tambahan .bx-file-blank {
@@ -305,14 +315,13 @@ nav .bx-bell, nav .bx-chevron-down{
     align-items: center;
 }
 
-.point-info .head-box .status-box .tambahan p {
+.point-info .head-box .status-box .tambahan-text p {
     display: flex;
     align-items: center;
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
     line-height: normal; 
-    padding-left: 20px;
     width: 924px;
 }
 
@@ -326,17 +335,17 @@ nav .bx-bell, nav .bx-chevron-down{
     border-radius: 10px;
     background: var(--primary-color);
     border: none;
-    margin-left: 110px;
+    /* margin-left: 110px; */
     cursor: pointer;
-}
-
-.point-info .head-box .status-box button a {
-    text-decoration: none;
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
     line-height: normal;
     color: var(--accent-color);
+}
+
+.point-info .head-box .status-box a {
+    text-decoration: none;
 }
 /* end */
 
@@ -419,7 +428,12 @@ nav .bx-bell, nav .bx-chevron-down{
 
 .qr .qr-container .tambahan {
     display: flex ;
+    justify-content: space-between;
     padding-top: 20px;
+}
+
+.qr .qr-container .tambahan-text {
+    display: flex ;
 }
 
 .qr .qr-container .tambahan .bx-mobile-alt {
