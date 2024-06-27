@@ -12,40 +12,122 @@
         <header>
             <div>
                 <nav>
-                    <ul class="sidebar">
-                        <li onclick=hideSidebar()><a href="#"><i class='bx bx-x'></i></a></li>
-                        <li><a href="../index.html#beranda">Beranda</a></li>
-                        <li><a href="../index.html#tentang">Tentang Kami</a></li>
-                        <li><a href="../index.html#panduan">Panduan</a></li>
-                        <li><a href="../index.html#faq">FAQs</a></li>
-                        <li><a href="../index.html#kontak">Kontak Kami</a></li>
-                        <li><a href="../index.html#penukaran">Penukaran</a></li>
-                    </ul>
-                    <ul>
-                        <a href="../index.html#beranda"><img src="../image/RePlate.png" alt=""></a>
-                        <li class="hideOnMobile"><a href="../index.html#beranda">Beranda</a></li>
-                        <li class="hideOnMobile"><a href="../index.html#tentang">Tentang Kami</a></li>
-                        <li class="hideOnMobile"><a href="../index.html#panduan">Panduan</a></li>
-                        <li class="hideOnMobile"><a href="../index.html#faq">FAQs</a></li>
-                        <li class="hideOnMobile"><a href="../index.html#kontak">Kontak Kami</a></li>
-                        <li class="hideOnMobile"><a href="../penukaran-page/penukaran.html">Penukaran</a></li>
-                        <li class="hideOnMobile"><a href="../login-register-page/replatelogin.html" id="masuk-button">Masuk</a></li>
-                        <li class="hideOnMobile"><a href="../login-register-page/replateregister.html" id="daftar-button">Daftar</a></li>
-                        <li><a href="../profile-page/profile.html"><i class='bx bx-user-circle'></i></a></li>
-                        <li class="menu-button" onclick=showSidebar()><a href="#"><i class='bx bx-menu'></i></a></li>
-                    </ul>
+                    <div class="container">
+                        <div class="nav-container">
+                            <div class="left-items">
+                                <a href="../index.html"><img src="../image/RePlate.png" alt=""></a>
+                                <ul>
+                                    <li class="hideOnMobile"><a href="../index.html#beranda">Beranda</a></li>
+                                    <li class="hideOnMobile"><a href="../index.html#tentang">Tentang Kami</a></li>
+                                    <li class="hideOnMobile"><a href="../index.html#panduan">Panduan</a></li>
+                                    <li class="hideOnMobile"><a href="../index.html#faq">FAQs</a></li>
+                                    <li class="hideOnMobile"><a href="../index.html#kontak">Kontak Kami</a></li>
+                                    <li class="hideOnMobile"><a href="../penukaran-page/penukaran.html">Penukaran</a></li>
+                                </ul>
+                            </div>
+                            <div class="right-items">
+                                <i class='bx bx-bell'></i>
+                                <a href="../profile-page/profile.html"><img src="../image/yoona.png" alt="Profile Picture" class="profile-picture"></a>
+                                <i class='bx bx-chevron-down' id="dropdown-toggle"></i>
+
+                                <div class="dropdown">
+                                    <div class="dropdown-content">
+                                        <div class="menu-item"><i class='bx bxs-coin-stack'></i><span>100.000 Points</span></div>
+                                        <div class="menu-item"><i class='bx bx-medal'></i><span>Silver</span></div>
+                                        <div class="menu-item"><a href="../index.html"><i class='bx bx-home-alt-2'></i><span>Dashboard</span></a></div>
+                                        <div class="menu-item"><a href="../profile-page/profile.html"><i class='bx bx-user'></i><span>Profil</span></a></div>
+                                        <div class="menu-item"><a href="../index.html"><i class='bx bx-log-out'></i><span>Keluar</span></a></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </nav>
             </div>
         </header>
     
     
         <div class="content">
-            <section class="profile">
-                <div class="profile">
-                    <br><br><br><br><br><br><br><br><br>
-                    <h1>This page is not available yet</h1>
-                    <p>We apologize for the inconvenience, but this page is currently under construction.</p>
-                    <br><br><br><br><br><br><br><br><br><br><br>
+            <section class="point-info">
+                <div class="head-box">
+                    <div class="decorations">
+                        <div class="decoration1"></div>
+                        <div class="decoration2"></div>
+                        <div class="decoration3"></div>
+                    </div>
+                    <div class="input-statement">
+                        <h1>Selamat Datang Im Yoona!</h1>
+                        <p>sudah daur ulang sampah hari ini?</p>
+                    </div>
+                    <div class="container">
+                        <div class="status-box">
+                            <div class="status-penukaran">
+                                <p class="status-title">Status Tukar Point</p>
+                                <p class="status-point">103 point</p>
+                            </div>
+                            <div class="tambahan">
+                                <i class='bx bx-file-blank'></i>
+                                <p>Anda belum melakukan tukar point Re-Plate. Jangan lewatkan kesempatan emas ini untuk mendapatkan hadiah 
+                                dari point yang telah anda kumpulkan
+                                </p>
+                                <button  class="tukarpoint"> <a href="#">Tukar</a></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="point-history">
+                <div class="container">
+                    <h1>Riwayat Penukaran Sampah</h1>
+                    <div class="table-container">
+                        <table class="riwayat">
+                            <tr class="table-header">
+                                <th class="jenis-sampah">Jenis Sampah</th>
+                                <th>Jumlah Sampah</th>
+                                <th>Tanggal Penukaran</th>
+                                <th>Poin</th>
+                            </tr>
+                            <tr class="table-info">
+                                <td class="jenis-sampah">Sampah Plastik</td>
+                                <td>10</td>
+                                <td>24 Februari 2024</td>
+                                <td class="point-table">30+</td>
+                            </tr>
+                            <tr class="table-info">
+                                <td class="jenis-sampah">Sampah Logam</td>
+                                <td>2</td>
+                                <td>5 Maret 2024</td>
+                                <td class="point-table">8+</td>
+                            </tr>
+                            <tr class="table-info">
+                                <td class="jenis-sampah">Sampah Kertas</td>
+                                <td>20</td>
+                                <td>4 April 2024</td>
+                                <td class="point-table">60+</td>
+                            </tr>
+                            <tr class="table-info">
+                                <td class="jenis-sampah">Sampah Kaca</td>
+                                <td>1</td>
+                                <td>1 Mei 2024</td>
+                                <td class="point-table">5+</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+
+            <section class="qr">
+                <div class="container">
+                    <div class="qr-container">
+                        <h1>Kode QR</h1>
+                        <div class="tambahan">
+                            <i class='bx bx-mobile-alt'></i>
+                            <p>Anda belum melakukan tukar point Re-Plate. Jangan lewatkan kesempatan emas ini untuk mendapatkan hadiah 
+                            dari point yang telah anda kumpulkan
+                            </p>
+                            <button class="qr-button"><i class='bx bx-qr-scan' ></i><a href="#">Pindai QR</a></button>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
@@ -72,4 +154,5 @@
         </footer>
     </div>
 </body>
+<script src="profile.js"></script>
 </html>
