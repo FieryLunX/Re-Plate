@@ -1,0 +1,336 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --primary-color: rgba(153, 204, 99, 1);
+    --secondary-color: rgba(172, 224, 116, 1);
+    --accent-color: rgba(255, 255, 255, 1);
+    --text-color: rgba(0, 0, 0, 1);
+    
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    color: var(--text-color);
+    font-family: "Montserrat", sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    min-width: 100vh;
+    /* background-color: rgb(69, 69, 69); */
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.content {
+    flex: 1;
+}
+
+.container {
+    width: 92%;
+    margin: auto;
+    height: 100%;
+    /* border: solid 1px red; */
+}
+
+#beranda, #tentang, #panduan, #faq, #kontak, #penukaran {
+    scroll-margin-top: 70px;
+}
+
+/* start navbar */
+header {
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    background-color: var(--accent-color);
+}
+
+nav.scrolled {
+    transition: box-shadow 0.2s ease-in;
+    box-shadow: 0px 1px 4px 0px var(--primary-color);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+nav .nav-container {
+display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .left-items {
+    display: flex;
+    align-items: center;
+}
+
+nav .left-items ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav .left-items img {
+    height: 80px;
+}
+
+nav .left-items li {
+    font-size: 20px;
+    height: 80px;
+}
+
+nav .left-items a {
+    height: 100%;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    padding: 0 12px;
+}
+
+nav .right-items {
+    display: flex;
+    align-items: center;
+}
+
+nav .right-items ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav .right-items .profile-picture {
+    border-radius: 50%;
+    margin-left: 60px;
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border: 1px solid var(--primary-color);
+}
+
+nav .bx-bell, nav .bx-chevron-down{
+    font-size: 35px;
+    color: var(--primary-color);
+    cursor: pointer;
+}
+
+/* Dropdown Style */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.dropdown .dropdown-content {
+    top: 40px;
+    left: -170px;
+    display: none;
+    position: absolute;
+    background-color: var(--accent-color);
+    height: 160px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 2px 0px rgba(0,0,0,0.1);
+    z-index: 1;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 2;
+}
+
+.dropdown .dropdown-content .menu-item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    padding: 0 12px;
+}
+
+.dropdown .dropdown-content .menu-item:hover {
+    border-radius: 8px;
+    background: rgba(153, 204, 99, 0.25);
+    width: 100%;
+}
+
+.dropdown .dropdown-content .menu-item span {
+    padding-left: 10px;
+}
+
+.dropdown .dropdown-content .bxs-coin-stack {
+    font-size: 18px;
+    color: rgba(206, 186, 3, 1);
+}
+
+.dropdown .dropdown-content .bx-medal {
+    font-size: 18px;
+    color: rgba(97, 97, 97, 1);
+}
+
+.dropdown .dropdown-content .bx-home-alt-2, .dropdown .dropdown-content .bx-user {
+    font-size: 18px;
+}
+
+.dropdown .dropdown-content .bx-log-out {
+    font-size: 18px;
+    color: rgba(245, 5, 5, 1);
+}
+/* end */
+
+
+/* main */
+
+.box-barcode{
+    border: solid rgb(175, 175, 175);
+    border-radius: 8px;
+    width: 100vh;
+    height: 50vh;
+    margin-left: 40vh;
+    margin-top: 20vh;
+    margin-bottom: 25vh;
+    justify-content: center;
+    
+}
+
+.box-barcode h2{
+    text-align: center;
+    padding-top: 3vh;
+    padding-left: 5vh;
+
+}
+
+.box-barcode p{
+    text-align: center;
+    padding-top: 2vh;
+    font-size: 14px;
+    color: rgb(168, 167, 167);
+}
+
+.bx-x{
+    font-size: 35px;
+    color:var(--primary-color);
+    float: right;
+    padding-top: 3px;
+    padding-right: 6px;
+
+}
+
+/* barcode  */
+.barcode-pict{
+    justify-content: center;
+    height: 25vh;
+    padding-top: 4vh;
+    padding-left: 18vh;
+}
+
+
+
+
+.footer {
+    box-shadow: 0px 1px 0 0px var(--primary-color) inset;
+    border-radius: 10px 10px 0px 0px;
+    background-color: var(--accent-color);
+    padding: 10px 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footer .logo img{
+    height: 88px;
+}
+
+.footer .copyright p {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.footer .kontak, .footer .sosial-media {
+    margin-top: 10px;
+}
+
+.footer h3 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.footer .kontak-info, .footer .sosial-info {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin: 15px 0;
+}
+
+.footer i {
+    margin: 10px 0;
+}
+
+.footer .bx-phone, .footer .bx-envelope, .footer .bxl-instagram, .footer .bxl-twitter {
+    margin-right: 10px;
+    color: var(--primary-color);
+}
+
+.footer span {
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    color: var(--text-color);
+}
+
+.footer a {
+    text-decoration: none;
+}
+
+/* end */
+
+/* Tablet Style */
+@media (max-width: 768px) {
+    .hideOnMobile {
+        display: none;
+    }
+    .menu-button {
+        display: block;
+    }
+    nav img {
+        margin-right: auto;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+    
+    .container {
+        width: 540px;
+    }
+
+    .hero .hero-content {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Desktop Style */
+@media (max-width: 1200px) {
+    .container {
+        width: 1140px;
+    }
+}

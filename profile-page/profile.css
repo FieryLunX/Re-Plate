@@ -155,8 +155,8 @@ nav .bx-bell, nav .bx-chevron-down{
     display: flex;
     align-items: center;
     width: 100%;
-    cursor: pointer;
     padding: 0 12px;
+    cursor: default;
 }
 
 .dropdown .dropdown-content .menu-item:hover {
@@ -181,6 +181,7 @@ nav .bx-bell, nav .bx-chevron-down{
 
 .dropdown .dropdown-content .bx-home-alt-2, .dropdown .dropdown-content .bx-user {
     font-size: 18px;
+    cursor: pointer;
 }
 
 .dropdown .dropdown-content .bx-log-out {
